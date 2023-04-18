@@ -2,5 +2,5 @@
 @prefix mp: <https://w3id.org/polifonia/ontology/musical-performance/> .
 @prefix core: <https://w3id.org/polifonia/ontology/core/> .
 
-td:Toxicity mp:isInvolvedInMusicalPerformance td:SystemOfADown-FirenzeRocks2017 .
-td:SystemOfADown-FirenzeRocks2017 core:hasPlace td:Florence .
+td:Toxicity mp:isInvolvedInMusicalPerformance td:SystemOfADown-FirenzeRocks2017 . 
+td:SystemOfADown-FirenzeRocks2017 core:hasTimeInterval td:TI2018 .
