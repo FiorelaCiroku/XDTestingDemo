@@ -1,0 +1,3 @@
+@prefix td: <https://raw.githubusercontent.com/polifonia-project/musical-performance/main/test/inference/toy-dataset/> .
+@prefix mp: <https://w3id.org/polifonia/ontology/musical-performance/> .
+td:SystemOfADown-FirenzeRocks2017 a mp:MusicalPerformance . 
