@@ -1,0 +1,1 @@
+This directory stores successfully passed tests.
