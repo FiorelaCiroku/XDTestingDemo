@@ -1,65 +1,64 @@
 {
-    "ontologies": [
+  "ontologies": [
+    {
+      "url": "https://raw.githubusercontent.com/FiorelaCiroku/XDTestingDemo/main/.xd-testing/RacingCars/RacingCars.owl",
+      "name": "RacingCars",
+      "userDefined": true
+    },
+    {
+      "url": "https://w3id.org/polifonia/ontology/musical-performance/ ",
+      "name": "MusicalPerformance",
+      "userDefined": true
+    }
+  ],
+  "fragments": [
+    {
+      "name": "RacingCarsManifacture",
+      "ontologyName": "RacingCars",
+      "fileName": "RacingCars/RacingCarsManifacture/ferrari.owl",
+      "tests": [
         {
-            "url": "https://raw.githubusercontent.com/FiorelaCiroku/XDTestingDemo/main/.xd-testing/RacingCars/RacingCars.owl",
-            "name": "RacingCars",
-            "userDefined": true
+          "type": "ERROR_PROVOCATION",
+          "content": "",
+          "reasoner": "hermiT 1.4.3.456",
+          "status": "failed",
+          "data": "",
+          "dataFileName": "RacingCars/RacingCarsManifacture/datasets/dataset.ttl",
+          "expectedResults": "",
+          "id": "EP001",
+          "statusNotes": "Executed"
+        }
+      ]
+    },
+    {
+      "name": "MusicalPerformanceFragment1",
+      "ontologyName": "MusicalPerformance",
+      "fileName": "MusicalPerformance/MusicalPerformanceFragment1/mp.owl",
+      "tests": [
+        {
+          "type": "COMPETENCY_QUESTION",
+          "content": "When was a musical performance recorded?",
+          "reasoner": "hermiT 1.4.3.456",
+          "status": "running",
+          "query": "PREFIX mp: <https://w3id.org/polifonia/ontology/musical-performance/> PREFIX core: <https://w3id.org/polifonia/ontology/core/> SELECT DISTINCT ?time WHERE { ?composition mp:isInvolvedInMusicalPerformance ?performance . ?performance core:hasTimeInterval ?time }",
+          "data": "",
+          "dataFileName": "MusicalPerformance/MusicalPerformanceFragment1/datasets/DatasetCQ.ttl",
+          "expectedResults": "",
+          "expectedResultsFileName": "MusicalPerformance/MusicalPerformanceFragment1/expectedResults/CQ-ExpectedResults.json",
+          "id": "CQ001"
         },
         {
-            "url": "https://w3id.org/polifonia/ontology/musical-performance/ ",
-            "name": "MusicalPerformance",
-            "userDefined": true
+          "type": "ERROR_PROVOCATION",
+          "content": "",
+          "reasoner": "hermiT 1.4.3.456",
+          "status": "failed",
+          "data": "",
+          "dataFileName": "MusicalPerformance/MusicalPerformanceFragment1/datasets/DatasetEP.ttl",
+          "expectedResults": "",
+          "id": "EP001",
+          "statusNotes": "Executed"
         }
-    ],
-    "fragments": [
-        {
-            "name": "RacingCarsManifacture",
-            "ontologyName": "RacingCars",
-            "fileName": "RacingCars/RacingCarsManifacture/ferrari.owl",
-            "tests": [
-                {
-                    "type": "ERROR_PROVOCATION",
-                    "content": "",
-                    "reasoner": "hermiT 1.4.3.456",
-                    "status": "failed",
-                    "data": "",
-                    "dataFileName": "RacingCars/RacingCarsManifacture/datasets/dataset.ttl",
-                    "expectedResults": "",
-                    "id": "EP001",
-                    "statusNotes": "Executed"
-                }
-            ]
-        },
-        {
-            "name": "MusicalPerformanceFragment1",
-            "ontologyName": "MusicalPerformance",
-            "fileName": "MusicalPerformance/MusicalPerformanceFragment1/mp.owl",
-            "tests": [
-                {
-                    "type": "COMPETENCY_QUESTION",
-                    "content": "When was a musical performance recorded?",
-                    "reasoner": "hermiT 1.4.3.456",
-                    "status": "failed",
-                    "query": "PREFIX mp: <https://w3id.org/polifonia/ontology/musical-performance/> PREFIX core: <https://w3id.org/polifonia/ontology/core/> SELECT DISTINCT ?time WHERE { ?composition mp:isInvolvedInMusicalPerformance ?performance . ?performance core:hasTimeInterval ?time }",
-                    "data": "",
-                    "dataFileName": "MusicalPerformance/MusicalPerformanceFragment1/datasets/DatasetCQ.ttl",
-                    "expectedResults": "",
-                    "expectedResultsFileName": "MusicalPerformance/MusicalPerformanceFragment1/expectedResults/ER.json",
-                    "id": "CQ001",
-                    "statusNotes": "Executed"
-                },
-                {
-                    "type": "ERROR_PROVOCATION",
-                    "content": "",
-                    "reasoner": "hermiT 1.4.3.456",
-                    "status": "failed",
-                    "data": "",
-                    "dataFileName": "MusicalPerformance/MusicalPerformanceFragment1/datasets/DatasetEP.ttl",
-                    "expectedResults": "",
-                    "id": "EP001",
-                    "statusNotes": "Executed"
-                }
-            ]
-        }
-    ]
+      ]
+    }
+  ]
 }
