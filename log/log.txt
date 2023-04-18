@@ -6,3 +6,5 @@
  INFO 2023-04-18 15:34:19,444 [main] (OWLUnit.java:89) - Test case URI https://raw.githubusercontent.com/FiorelaCiroku/XDTestingDemo/main/XDTesting/RacingCars/RacingCarsManifacture/ErrorProvocationTest/EPTestCase/EP001.ttl
  INFO 2023-04-18 15:42:15,120 [main] (OWLUnit.java:89) - Test case URI https://raw.githubusercontent.com/FiorelaCiroku/XDTestingDemo/main/XDTesting/RacingCars/RacingCarsManifacture/ErrorProvocationTest/EPTestCase/EP001.ttl
  INFO 2023-04-18 15:42:17,770 [main] (OWLUnit.java:89) - Test case URI https://raw.githubusercontent.com/FiorelaCiroku/XDTestingDemo/main/XDTesting/RacingCars/RacingCarsManifacture/ErrorProvocationTest/EPTestCase/EP001.ttl
+ INFO 2023-04-18 15:45:00,601 [main] (OWLUnit.java:89) - Test case URI https://raw.githubusercontent.com/FiorelaCiroku/XDTestingDemo/main/XDTesting/RacingCars/RacingCarsManifacture/ErrorProvocationTest/EPTestCase/EP001.ttl
+ INFO 2023-04-18 15:45:02,746 [main] (OWLUnit.java:89) - Test case URI https://raw.githubusercontent.com/FiorelaCiroku/XDTestingDemo/main/XDTesting/RacingCars/RacingCarsManifacture/ErrorProvocationTest/EPTestCase/EP001.ttl
