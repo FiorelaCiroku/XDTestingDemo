@@ -1,34 +1,39 @@
 {
-    "ontologies": [
+  "ontologies": [
+    {
+      "url": "https://raw.githubusercontent.com/FiorelaCiroku/XDTestingDemo/main/.xd-testing/RacingCars/RacingCars.owl",
+      "name": "RacingCars",
+      "userDefined": true
+    },
+    {
+      "url": "https://w3id.org/polifonia/ontology/musical-performance/ ",
+      "name": "MusicalPerformance",
+      "userDefined": true
+    }
+  ],
+  "fragments": [
+    {
+      "name": "RacingCarsManifacture",
+      "ontologyName": "RacingCars",
+      "fileName": "RacingCars/RacingCarsManifacture/ferrari.owl",
+      "tests": [
         {
-            "url": "https://raw.githubusercontent.com/FiorelaCiroku/XDTestingDemo/main/.xd-testing/RacingCars/RacingCars.owl",
-            "name": "RacingCars",
-            "userDefined": true
-        },
-        {
-            "url": "https://w3id.org/polifonia/ontology/musical-performance/ ",
-            "name": "MusicalPerformance",
-            "userDefined": true
+          "type": "ERROR_PROVOCATION",
+          "content": "",
+          "reasoner": "hermiT 1.4.3.456",
+          "status": "failed",
+          "data": "",
+          "dataFileName": "RacingCars/RacingCarsManifacture/datasets/dataset.ttl",
+          "expectedResults": "",
+          "id": "EP001",
+          "statusNotes": "Executed"
         }
-    ],
-    "fragments": [
-        {
-            "name": "RacingCarsManifacture",
-            "ontologyName": "RacingCars",
-            "fileName": "RacingCars/RacingCarsManifacture/ferrari.owl",
-            "tests": [
-                {
-                    "type": "ERROR_PROVOCATION",
-                    "content": "",
-                    "reasoner": "hermiT 1.4.3.456",
-                    "status": "failed",
-                    "data": "",
-                    "dataFileName": "RacingCars/RacingCarsManifacture/datasets/dataset.ttl",
-                    "expectedResults": "",
-                    "id": "EP001",
-                    "statusNotes": "Executed"
-                }
-            ]
-        }
-    ]
+      ]
+    },
+    {
+      "name": "MusicalPerformanceFragment1",
+      "ontologyName": "MusicalPerformance",
+      "fileName": "MusicalPerformance/MusicalPerformanceFragment1/mp.owl"
+    }
+  ]
 }
