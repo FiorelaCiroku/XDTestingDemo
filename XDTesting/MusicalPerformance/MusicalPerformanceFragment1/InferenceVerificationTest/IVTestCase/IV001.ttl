@@ -1,0 +1,11 @@
+@prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
+@prefix ns: <https://raw.githubusercontent.com/FiorelaCiroku/XDTestingDemo/main/.xd-testing/MusicalPerformance/MusicalPerformanceFragment1/mp.owl> .
+@prefix td: <https://raw.githubusercontent.com/FiorelaCiroku/XDTestingDemo/main/XDTesting/MusicalPerformance/MusicalPerformanceFragment1/InferenceVerificationTest/IVDataSet/> .
+@prefix tc: <https://raw.githubusercontent.com/FiorelaCiroku/XDTestingDemo/main/XDTesting/MusicalPerformance/MusicalPerformanceFragment1/InferenceVerificationTest/IVTestCase/> .
+
+tc:IV001.ttl a owlunit:InferenceVerification ;
+	owlunit:hasSPARQLUnitTest "PREFIX mp: <https://w3id.org/polifonia/ontology/musical-performance/> PREFIX td: < https://raw.githubusercontent.com/polifonia-project/musical-performance-ontology/main/test/inference/toy-dataset/ > PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ASK { td:SystemOfADown-FirenzeRocks2017 a mp:MusicalPerformance . }" ;
+	owlunit:hasInputData td:IV001TD.ttl ;
+	owlunit:hasExpectedResult true ;
+	owlunit:hasReasoner owlunit:HermiT ;
+	owlunit:testsOntology ns: .
